@@ -1,8 +1,6 @@
 html,
 body {
    height: 100%;
-   // position: relative;
-   // overflow-x: hidden;
 }
 a {
    display: inline-block;
@@ -16,22 +14,10 @@ li {
 }
 
 body {
-   
    font-family: "MuseoSansCyrl", sans-serif;
    font-size: 20px;
    font-weight: 600;
    color: #1A1A1A;
-}
-.wrapper {
-   display: flex;
-   flex-direction: column;
-   height: 100%;
-}
-.content {
-   flex: 1 0 auto;
-}
-.footer {
-   flex: 0 0 auto;
 }
 .container {
    max-width: 1026px;
@@ -39,9 +25,9 @@ body {
    padding: 0px 15px;
 }
 .container-fluid {
-   max-width: 1280px;
+   max-width: 1230px;
    margin: 0px auto;
-   padding: 0px 40px;
+   padding: 0px 15px;
 }
 .header__btn {
    background-color: #fff;
