@@ -36,6 +36,12 @@
    margin-bottom: 40px;
 }
 .header__box {
+   a{
+      color: #1A1A1A;
+      &:hover{
+         opacity: 0.7;
+      }
+   }
    a + a {
       margin-left: 8px;
    }
@@ -103,6 +109,11 @@
    }
 }
 .social__box-links {
+   a{
+      &:hover{
+         opacity: 0.7;
+      }
+   }
    a + a {
       margin-left: 14px;
    }
@@ -168,16 +179,16 @@
 
 //end social
 //start questions
-.questions{
+.questions {
    margin-bottom: 80px;
 }
 .questions__title {
    text-align: center;
 }
-.questions__slider{
+.questions__slider {
    height: 160px;
 }
-.slick-slide.slick-active{
+.slick-slide.slick-active {
    width: 282px !important;
    margin-right: 24px;
 }
@@ -201,10 +212,10 @@
 }
 
 .slick-arrow::before,
-.slick-arrow::after{
-    display: none;
+.slick-arrow::after {
+   display: none;
 }
-.slick-next{ 
+.slick-next {
    position: absolute;
    z-index: 1;
    top: 55px;
@@ -217,16 +228,69 @@
    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
    cursor: pointer;
    padding: 0;
-   img{
+   img {
       width: 6.59px;
       height: 11.17px;
    }
 }
 //end questions
 //start reference
-.reference__title{
+.reference__title {
    text-align: center;
 }
+.reference__item {
+   padding: 20px 70px 20px 24px;
+   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+   border-radius: 16px;
+   margin-bottom: 12px;
+   position: relative;
+   &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/next-grey.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 6.6px;
+      height: 11.2px;
+      top: 50%;
+      right: 25px;
+      cursor: pointer;
+   }
+}
+.reference__item-title {
+   span {
+      display: block;
+      margin-top: 4px;
+      max-width: 400px;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 140%;
+      color: #949494;
+   }
+}
+.reference__item-text {
+   font-weight: 300;
+   line-height: 140%;
+   height: 0;
+   opacity: 0;
+   
+   
+}
+.reference__item.reference__item--active {
+   .reference__item-text {
+      height: 100%;
+      margin-top: 20px;
+      border-top: 1px solid #949494;
+      padding-top: 10px;
+      opacity: 1;
+      transition: all 0.3s;
+   }
+   &::before {
+      transform: rotate(90deg); 
+   }
+   
+}
+
 //end reference
 
 @import "midia";

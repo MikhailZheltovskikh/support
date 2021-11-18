@@ -30,3 +30,12 @@ $('.questions__slider').slick({
  
  
  });
+
+$('.reference__item').on('click', function(){
+   if($(this).hasClass('reference__item--active')){
+      $(this).removeClass('reference__item--active');
+   }
+   else{$(this).addClass('reference__item--active');
+   }
+   
+ });
