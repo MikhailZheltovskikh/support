@@ -189,7 +189,7 @@
    height: 160px;
 }
 .slick-slide.slick-active {
-   width: 282px !important;
+   // width: 282px !important;
    margin-right: 24px;
 }
 .slider__item {
@@ -199,7 +199,9 @@
    border-radius: 16px;
    max-width: 282px;
    height: 160px;
+   color: #1A1A1A;
    display: flex;
+   cursor: pointer;
 }
 .slider__item-title {
    font-size: 20px;
