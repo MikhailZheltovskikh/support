@@ -1,0 +1,232 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+//start header
+.header {
+   margin-top: 40px;
+   margin-bottom: 82px;
+}
+.header-wrapper {
+   padding: 40px 40px 54px;
+   background: #93bbea;
+   border-radius: 40px;
+   min-height: 306px;
+   background-position: bottom center;
+   background-repeat: no-repeat;
+   color: #fff;
+   text-align: center;
+}
+.header__title,
+.header__text {
+   max-width: 535px;
+   margin: 0 auto;
+}
+.header__title {
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 120%;
+   margin-bottom: 4px;
+}
+.header__text {
+   font-size: 17px;
+   line-height: 140%;
+   font-weight: 300;
+   margin-bottom: 40px;
+}
+.header__box {
+   a + a {
+      margin-left: 8px;
+   }
+}
+.header__btn {
+   &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
+   &-online {
+      &::before {
+         background-image: url(../images/online.svg);
+         width: 14px;
+         height: 13px;
+         padding-right: 22px;
+      }
+   }
+   &-phone {
+      &::before {
+         background-image: url(../images/phone.svg);
+         width: 13px;
+         height: 13px;
+         padding-right: 23px;
+      }
+   }
+   &-mail {
+      &::before {
+         background-image: url(../images/mail.svg);
+         width: 14px;
+         height: 11px;
+         padding-right: 22px;
+      }
+   }
+   &-review {
+      &::before {
+         background-image: url(../images/review.svg);
+         width: 18px;
+         height: 16px;
+         padding-right: 24px;
+      }
+   }
+}
+//end header
+//start social
+.social {
+   margin-bottom: 80px;
+}
+.social-wrapper {
+   box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
+   border-radius: 40px;
+   padding: 42px 40px;
+}
+.social__box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.social__box-title {
+   margin-bottom: 0;
+   span {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 16px;
+   }
+}
+.social__box-links {
+   a + a {
+      margin-left: 14px;
+   }
+}
+.social__link {
+   width: 56px;
+   height: 56px;
+   background: #f9f9f9;
+   border-radius: 13.3311px;
+   position: relative;
+   &::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+   &-vk {
+      &::before {
+         background-image: url(../images/vk.svg);
+         width: 25.33px;
+         height: 13.33px;
+      }
+   }
+   &-instagram {
+      &::before {
+         background-image: url(../images/instagram.svg);
+         width: 19.6px;
+         height: 19.6px;
+      }
+   }
+   &-tiktok {
+      &::before {
+         background-image: url(../images/tiktok.svg);
+         width: 20px;
+         height: 21.51px;
+      }
+   }
+   &-twitter {
+      &::before {
+         background-image: url(../images/twitter.svg);
+         width: 23.3px;
+         height: 18.94px;
+      }
+   }
+   &-dzen {
+      &::before {
+         background-image: url(../images/dzen.svg);
+         width: 36px;
+         height: 36px;
+      }
+   }
+   &-facebook {
+      &::before {
+         background-image: url(../images/facebook.svg);
+         width: 11px;
+         height: 24px;
+      }
+   }
+}
+
+//end social
+//start questions
+.questions{
+   margin-bottom: 80px;
+}
+.questions__title {
+   text-align: center;
+}
+.questions__slider{
+   height: 160px;
+}
+.slick-slide.slick-active{
+   width: 282px !important;
+   margin-right: 24px;
+}
+.slider__item {
+   padding: 16px;
+   background: #ffffff;
+   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+   border-radius: 16px;
+   max-width: 282px;
+   height: 160px;
+   display: flex;
+}
+.slider__item-title {
+   font-size: 20px;
+}
+.slider__item-text {
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 140%;
+   color: #949494;
+}
+
+.slick-arrow::before,
+.slick-arrow::after{
+    display: none;
+}
+.slick-next{ 
+   position: absolute;
+   z-index: 1;
+   top: 55px;
+   right: 0;
+   border: none;
+   border-radius: 50%;
+   width: 44px;
+   height: 44px;
+   background-color: #fff;
+   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+   cursor: pointer;
+   padding: 0;
+   img{
+      width: 6.59px;
+      height: 11.17px;
+   }
+}
+//end questions
+//start reference
+.reference__title{
+   text-align: center;
+}
+//end reference
+
+@import "midia";
