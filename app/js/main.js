@@ -2,7 +2,6 @@ $('.questions__slider').slick({
    nextArrow: '<button class="slick-next slick-next"><img src="images/next.svg" alt="next arrow"></button>',
    slidesToShow: 4,
    slidesToScroll: 1,
-   focusOnSelect: true,
    arrows: true,
    responsive: [
       {

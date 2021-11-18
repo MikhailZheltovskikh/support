@@ -188,16 +188,12 @@
 .questions__slider {
    height: 160px;
 }
-.slick-slide.slick-active {
-   // width: 282px !important;
-   margin-right: 24px;
-}
 .slider__item {
    padding: 16px;
    background: #ffffff;
    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
    border-radius: 16px;
-   max-width: 282px;
+   width: 282px;
    height: 160px;
    color: #1a1a1a;
    display: flex;
